@@ -1,0 +1,75 @@
+<style>
+  a#R-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform ease-in-out 0.5s;
+  }
+
+  a#R-logo:hover {
+    transform: scale(105%);
+  }
+
+  a#R-logo #full-logo {
+    flex: 1;
+    width: 30%;
+    position: relative;
+    shape-rendering: geometricPrecision;
+  }
+
+  a#R-logo #full-logo #spheres path,
+  a#R-logo #full-logo #spheres,
+  a#R-logo #full-logo #flat-circle path,
+  a#R-logo #full-logo #flat-circle {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    fill: var(--INTERNAL-MAIN-TEXT-color);
+  }
+
+  a#R-logo #full-logo #spheres {
+    animation: rotateAnimation 6s linear infinite;
+    transform-origin: center;
+  }
+
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  a#R-logo #full-logo #circle path {
+    fill: #09beff !important;
+  }
+
+  a#R-logo span {
+    text-align: left;
+    position: relative;
+    min-width: 65%;
+    font-size: 3rem;
+    color: var(--INTERNAL-MAIN-TEXT-color);
+    font-family: 'Roboto', 'Work Sans', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    font-weight: 200;
+    padding: 0;
+  }
+</style>
+<a id="R-logo" href="{{ partial "relLangPrettyUglyURL.hugo" (dict "to" .Site.Home) }}">
+  <div id="full-logo">
+    <svg id="circle" viewBox="0 0 148.617 148.617" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+      <path shape-rendering="optimizeQuality" d="M53.62 51.575a30.712 30.62 48 0 1 43.305 2.334 30.712 30.62 48 0 1-2.205 43.312 30.712 30.62 48 0 1-43.305-2.334 30.712 30.62 48 0 1 2.205-43.312Z"/>
+    </svg>
+    <svg id="flat-circle" viewBox="0 0 148.617 148.617" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+      <path shape-rendering="optimizeQuality" d="M74.309 19.287c-30.374 0-55.022 24.648-55.022 55.022S43.935 129.33 74.31 129.33s55.021-24.647 55.021-55.021c0-30.374-24.647-55.022-55.021-55.022zm0 2.25c29.158 0 52.771 23.614 52.771 52.772 0 29.158-23.613 52.771-52.771 52.771S21.537 103.467 21.537 74.31 45.151 21.537 74.31 21.537z"/>
+    </svg>
+    <svg id="spheres" viewBox="0 0 148.617 148.617" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+      <path shape-rendering="optimizeQuality" d="M31.965 30.556a15.336 15.382 78 0 1 11.858-18.2A15.336 15.382 78 0 1 62.058 24.16 15.336 15.382 78 0 1 50.2 42.36a15.336 15.382 78 0 1-18.235-11.803Z"/>
+      <path shape-rendering="optimizeQuality" d="M51.765 106.809a15.336 15.382 18 0 1 9.832 19.369 15.336 15.382 18 0 1-19.339 9.89 15.336 15.382 18 0 1-9.832-19.369 15.336 15.382 18 0 1 19.339-9.89zM138.78 85.83a15.382 15.336 48 0 1-21.69-1.17 15.382 15.336 48 0 1 1.105-21.693 15.382 15.336 48 0 1 21.69 1.169 15.382 15.336 48 0 1-1.104 21.693z"/>
+    </svg>
+  </div>
+  <span>1SPIN</span>
+</a>
