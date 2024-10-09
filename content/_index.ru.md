@@ -5,11 +5,9 @@ archetype = "default"
 url = "getskript"
 +++
 
-## Документация по обработке заявок 1SPIN
+## Документация по обработке заявок SpinPay
 <gray>finally we did it ...</gray>
 
 <hundred-empty-line></hundred-empty-line>
 
-{{% big-link url="./manual-processing" icon="fa-solid fa-link" %}}**Ручная обработка**{{% /big-link %}}
-
-{{% big-link url="./bot-processing" icon="fa-solid fa-link" %}}**Работа через бота**{{% /big-link %}}
+{{% big-link url="./spinpay-2.0" icon="fa-solid fa-link" %}}**SpinPay 2.0**{{% /big-link %}}
