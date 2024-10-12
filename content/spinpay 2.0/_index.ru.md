@@ -17,7 +17,7 @@ weight = 0
 <hundred-empty-line></hundred-empty-line>
 Где, 
 \
-`{{% copy style = "default-link" %}} 43onfpqXPAzFeoWcF7DqvhC8CBwi5Mp8 <i class="fa-solid fa-copy fa-xs scale"></i> {{% /copy %}}` - ID транзакции.
+`{{% copy style = "default-link" %}} 43onfpqXPAzFeoWcF7DqvhC8CBwi5Mp8<i class="fa-solid fa-copy fa-xs scale"> </i> {{% /copy %}}` - ID транзакции.
 
 Далее нам необходимо перейти на сайт аналитики - **Metabase**. Для входа вам выдадут данные для авторизации, пароль можете изменить самостоятельно после входа.
 \
